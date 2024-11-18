@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/cursor_auto_build_blog/',
   title: "My Blog",
   description: "A VitePress Blog",
   themeConfig: {
@@ -20,7 +21,10 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/USERNAME' }
+      { icon: 'github', link: 'https://github.com/RuiMM' }
     ]
-  }
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/cursor_auto_build_blog/favicon.ico' }]
+  ]
 }) 

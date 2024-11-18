@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      
+          
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -50,6 +50,8 @@ jobs:
       
       - name: Build
         run: pnpm run docs:build
+        env:
+          NODE_OPTIONS: "--max_old_space_size=4096"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2

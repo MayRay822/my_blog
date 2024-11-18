@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/REPO_NAME/',
   title: "My Blog",
   description: "A VitePress Blog",
   themeConfig: {

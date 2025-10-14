@@ -1,16 +1,13 @@
 ---
 layout: home
 hero:
-  name: My Blog
+  name: MayRay Blog
   text: 分享技术与生活
   tagline: 记录、分享、成长
   actions:
     - theme: brand
       text: 开始阅读
-      link: /articles/
-    - theme: alt
-      text: 关于我
-      link: /about
+      link: /web/
 features:
   - title: 技术分享
     details: 分享编程技术和开发经验

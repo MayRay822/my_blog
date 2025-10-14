@@ -1,27 +1,27 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/cursor_auto_build_blog/',
-  title: "My Blog",
+  base: '/blog/',
+  title: "MayRay",
   description: "A VitePress Blog",
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: '文章', link: '/articles/' },
-      { text: '关于', link: '/about' }
+      { text: 'web', link: '/web/' },
     ],
     sidebar: {
-      '/articles/': [
+      '/web/': [
         {
           text: '文章列表',
           items: [
-            // 这里可以添加您的文章链接
+            { text: '基于 Vite 优化前端镜像', link: '/web/vite-build' },
+            { text: 'Git push 时预检分支', link: '/web/git-pre-push' }
           ]
         }
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/RuiMM' }
+      { icon: 'github', link: 'https://github.com/MayRay822' }
     ]
   },
   head: [

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/blog/',
+  base: '/my_blog/',
   title: "MayRay",
   description: "A VitePress Blog",
   themeConfig: {

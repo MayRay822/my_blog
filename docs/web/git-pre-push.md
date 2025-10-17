@@ -122,7 +122,13 @@ checkRepo();
 {
 	"scripts":{
 		"prepare": "husky", // husky init时会自动生成
-    	"check-repo": "node scripts/check-repo.js" // 需要手动配置 后缀名是.mjs需要改成相应的后缀名
-	}
+    	"check-repo": "node scripts/check-repo.js"
 }
+```
+
+
+### 6.执行脚本
+配置 git hook，在.husky目录下创建 pre-push文件，内容为：
+```javascript
+pnpm run check-repo
 ```

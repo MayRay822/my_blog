@@ -8,7 +8,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'web', link: '/web/' },
-      { text:'monday',link: '/monday/' }
+      { text:'agent',link: '/agent/' }
     ],
     sidebar: {
       '/web/': [
@@ -20,11 +20,11 @@ export default defineConfig({
           ]
         }
       ],
-      '/monday/': [
+      '/agent/': [
         {
           text: '文章列表',
           items: [
-            { text: 'Monday：从视频自动构建 GUI Agents 轨迹数据', link: '/monday/monday' }
+            { text: 'Monday：从视频自动构建 GUI Agents 轨迹数据', link: '/agent/monday' }
           ]
         }
       ]

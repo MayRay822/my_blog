@@ -8,6 +8,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: 'web', link: '/web/' },
+      { text:'monday',link: '/monday/' }
     ],
     sidebar: {
       '/web/': [
@@ -16,6 +17,14 @@ export default defineConfig({
           items: [
             { text: '基于 Vite 优化前端镜像', link: '/web/vite-build' },
             { text: 'Git push 时预检分支', link: '/web/git-pre-push' }
+          ]
+        }
+      ],
+      '/monday/': [
+        {
+          text: '文章列表',
+          items: [
+            { text: 'Monday：从视频自动构建 GUI Agents 轨迹数据', link: '/monday/monday' }
           ]
         }
       ]
